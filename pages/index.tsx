@@ -1,8 +1,12 @@
+import { PageLayout } from "layouts/PageLayout"
 import type { NextPage } from "next"
 
 const Home: NextPage = () => {
   return (
-    <div></div>
+    <PageLayout>
+      <div>
+      </div>
+    </PageLayout>
   )
 }
 
