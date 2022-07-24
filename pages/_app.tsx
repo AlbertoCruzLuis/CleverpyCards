@@ -1,9 +1,12 @@
 import "../styles/globals.css"
 import type { AppProps } from "next/app"
+import { Providers } from "utils/providers"
 
 function MyApp ({ Component, pageProps }: AppProps) {
   return (
-    <Component {...pageProps} />
+    <Providers>
+      <Component {...pageProps} />
+    </Providers>
   )
 }
 

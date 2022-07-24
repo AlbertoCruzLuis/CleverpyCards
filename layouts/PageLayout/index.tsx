@@ -21,7 +21,7 @@ export const PageLayoutComponent: FC<IPageLayoutProps> = ({ children }) => {
     <Background>
       <Header />
       <div className="flex flex-col min-h-screen">
-        <main className="flex flex-col grow">
+        <main className="flex flex-col p-8 grow xl:p-0 xl:container xl:mx-auto">
           {children}
         </main>
       </div>

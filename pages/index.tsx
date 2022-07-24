@@ -1,11 +1,11 @@
+import { PostSection } from "features/Post/content/PostSection"
 import { PageLayout } from "layouts/PageLayout"
 import type { NextPage } from "next"
 
 const Home: NextPage = () => {
   return (
     <PageLayout>
-      <div>
-      </div>
+      <PostSection />
     </PageLayout>
   )
 }

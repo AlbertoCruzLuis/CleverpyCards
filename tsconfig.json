@@ -22,6 +22,18 @@
       "utils/*": [
         "utils/*"
       ],
+      "redux/*": [
+        "redux/*"
+      ],
+      "config": [
+        "config"
+      ],
+      "services/*": [
+        "services/*"
+      ],
+      "features/*": [
+        "features/*"
+      ],
       "test/*": [
         "test/*"
       ],
