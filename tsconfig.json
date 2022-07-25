@@ -22,6 +22,9 @@
       "utils/*": [
         "utils/*"
       ],
+      "hooks/*": [
+        "hooks/*"
+      ],
       "redux/*": [
         "redux/*"
       ],

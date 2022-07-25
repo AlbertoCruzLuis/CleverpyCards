@@ -9,6 +9,6 @@ export const queryClient = new QueryClient({
   }
 })
 
-export const refetchNFTCollection = async () => {
+export const refetchAllQueries = async () => {
   await queryClient.refetchQueries()
 }

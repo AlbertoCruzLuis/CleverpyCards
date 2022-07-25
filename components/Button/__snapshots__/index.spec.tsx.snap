@@ -3,6 +3,7 @@
 exports[`Button Primary renders correctly 1`] = `
 <button
   class="bg-pink-1000 hover:bg-pink-500 text-white px-4 py-2"
+  type="button"
 >
   Primary Button
 </button>
@@ -11,6 +12,7 @@ exports[`Button Primary renders correctly 1`] = `
 exports[`Button Primary renders correctly with icon 1`] = `
 <button
   class="bg-pink-1000 hover:bg-pink-500 text-white px-4 py-2"
+  type="button"
 >
   <svg
     fill="currentColor"
@@ -35,6 +37,7 @@ exports[`Button Primary renders correctly with icon 1`] = `
 exports[`Button Primary renders correctly with size large 1`] = `
 <button
   class="bg-pink-1000 hover:bg-pink-500 text-white px-8 py-2"
+  type="button"
 >
   Primary Button
 </button>
@@ -43,6 +46,7 @@ exports[`Button Primary renders correctly with size large 1`] = `
 exports[`Button Secondary renders correctly 1`] = `
 <button
   class="border border-pink-1000 hover:border-pink-400 hover:text-pink-400 text-pink-1000 px-4 py-2"
+  type="button"
 >
   Secondary Button
 </button>
@@ -51,6 +55,7 @@ exports[`Button Secondary renders correctly 1`] = `
 exports[`Button Secondary renders correctly with icon 1`] = `
 <button
   class="border border-pink-1000 hover:border-pink-400 hover:text-pink-400 text-pink-1000 px-4 py-2"
+  type="button"
 >
   <svg
     fill="currentColor"
@@ -75,6 +80,7 @@ exports[`Button Secondary renders correctly with icon 1`] = `
 exports[`Button Secondary renders correctly with size large 1`] = `
 <button
   class="border border-pink-1000 hover:border-pink-400 hover:text-pink-400 text-pink-1000 px-8 py-2"
+  type="button"
 >
   Secondary Button
 </button>
@@ -83,6 +89,7 @@ exports[`Button Secondary renders correctly with size large 1`] = `
 exports[`Button Tertiary renders correctly 1`] = `
 <button
   class="text-white px-4 py-2"
+  type="button"
 >
   Tertiary Button
 </button>
@@ -91,6 +98,7 @@ exports[`Button Tertiary renders correctly 1`] = `
 exports[`Button Tertiary renders correctly with icon 1`] = `
 <button
   class="text-white px-4 py-2"
+  type="button"
 >
   <svg
     fill="currentColor"
@@ -115,6 +123,7 @@ exports[`Button Tertiary renders correctly with icon 1`] = `
 exports[`Button Tertiary renders correctly with size large 1`] = `
 <button
   class="text-white px-8 py-2"
+  type="button"
 >
   Tertiary Button
 </button>

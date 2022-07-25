@@ -53,6 +53,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
       <button
         className={cn}
         onClick={onClick}
+        type="button"
         ref={ref}
       >
         {icon && icon}
