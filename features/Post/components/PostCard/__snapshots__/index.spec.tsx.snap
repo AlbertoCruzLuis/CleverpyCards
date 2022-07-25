@@ -3,6 +3,7 @@
 exports[`PostCard renders correctly 1`] = `
 <div
   class="relative flex flex-col justify-between gap-4 p-4 rounded-sm bg-neutral-200"
+  style="opacity: 0.1;"
 >
   <span
     class="absolute font-bold top-2 right-2"
