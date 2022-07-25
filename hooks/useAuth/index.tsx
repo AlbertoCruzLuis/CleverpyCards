@@ -1,13 +1,13 @@
 import { IFormValues } from "features/Login/components/LoginForm"
+import { useGlobalLocalStorage } from "hooks/useGlobalLocalStorage"
 import { useRouter } from "next/router"
 import { useEffect } from "react"
 import toast from "react-hot-toast"
-import { useLocalStorage } from "react-use"
 import { loginPost } from "services/auth"
 
 export const useAuth = () => {
   const router = useRouter()
-  const [isAuth, setAuth] = useLocalStorage<boolean>("auth")
+  const [isAuth, setAuth] = useGlobalLocalStorage<boolean>("auth")
 
   const redirectToLoginOrHome = (isAuth: boolean | undefined) => {
     if (isAuth) {
@@ -18,7 +18,8 @@ export const useAuth = () => {
   }
 
   useEffect(() => {
-    if (router) {
+    const isLoad = isAuth !== undefined
+    if (router && isLoad) {
       redirectToLoginOrHome(isAuth)
     }
   }, [isAuth])

@@ -1,6 +1,7 @@
 import { useScrollPosition } from "@n8tb1t/use-scroll-position"
 import { CustomLink } from "components/CustomLink"
 import { ILogoProps } from "components/Logo"
+import { useUI } from "hooks/useUI"
 import dynamic from "next/dynamic"
 import { useRouter } from "next/router"
 import { useEffect, useState } from "react"
@@ -18,6 +19,7 @@ export const Header = () => {
   const [isUpScroll, setUpScroll] = useState(true)
   const [positionScroll, setPositionScroll] = useState(0)
   const router = useRouter()
+  const { openSidebar } = useUI()
 
   useEffect(() => {
     setTimeout(() => {
@@ -50,9 +52,9 @@ export const Header = () => {
             <Logo />
           </CustomLink>
         </div>
-        <div className="xs:hidden">
+        <div className="">
           <div className="flex gap-8">
-            <button className="relative">
+            <button className="relative" onClick={openSidebar}>
               <BiUser size="1.2rem" className="text-neutral-200" />
             </button>
           </div>

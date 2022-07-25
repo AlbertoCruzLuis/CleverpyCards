@@ -1,4 +1,5 @@
 import { Background } from "components/Background"
+import { Sidebar } from "components/Sidebar"
 import dynamic from "next/dynamic"
 import { FC, memo, ReactNode } from "react"
 
@@ -27,6 +28,7 @@ export const PageLayoutComponent: FC<IPageLayoutProps> = ({ children }) => {
       </div>
       <div className="p-8"></div>
       <Footer />
+      <Sidebar />
     </Background>
   )
 }
