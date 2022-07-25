@@ -1,5 +1,6 @@
 import { Avatar } from "features/Post/components/Avatar"
 import { usePost } from "features/Post/hooks/usePost"
+import { motion } from "framer-motion"
 import { BsTrash } from "react-icons/bs"
 import { EditText } from "../EditText"
 
@@ -21,7 +22,12 @@ export const PostCard = ({
   const { updatePost, removePost } = usePost()
 
   return (
-    <div className="relative flex flex-col justify-between gap-4 p-4 rounded-sm bg-neutral-200">
+    <motion.div
+      className="relative flex flex-col justify-between gap-4 p-4 rounded-sm bg-neutral-200"
+      initial={{ opacity: id * 0.1 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <span className="absolute font-bold top-2 right-2">#{id}</span>
       <div className="flex flex-col gap-2">
         <div className="flex items-center gap-2">
@@ -60,6 +66,6 @@ export const PostCard = ({
           <BsTrash className="text-gray-600 transition-all hover:rotate-12" />
         </button>
       </div>
-    </div>
+    </motion.div>
   )
 }
