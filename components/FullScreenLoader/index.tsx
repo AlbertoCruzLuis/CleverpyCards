@@ -22,7 +22,7 @@ export const FullScreenLoader = ({ children }: IFullScreenLoaderProps) => {
   useEffect(() => {
     setTimeout(() => {
       showLoader()
-    }, 500)
+    }, 800)
   }, [router, isAuth])
 
   if (!isLoading) {

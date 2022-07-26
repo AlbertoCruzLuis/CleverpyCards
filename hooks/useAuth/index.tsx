@@ -18,8 +18,7 @@ export const useAuth = () => {
   }
 
   useEffect(() => {
-    const isLoad = isAuth !== undefined
-    if (router && isLoad) {
+    if (router) {
       redirectToLoginOrHome(isAuth)
     }
   }, [isAuth])
